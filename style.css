@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400&display=swap');
+:root {
+    --tamnoPlava: #1d527c;  /* rgb(29, 82, 124) */
+    --svetloPlava: #459ad3; /* rgb(69, 154, 211) */
+    --orange: #fd7f45;      /* rgb(253, 127, 69) */
+    --tamnoSiva: #3c3b3c;
+    --svetloSiva: lightgray;
+    --bela: #fff;
+    --transition: .3s ease;
+    --padding: 100px 0;
+}
+/* basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    color: var(--tamnoSiva);
+    line-height: 1.6;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.underline {
+    height: 2px;;
+    width: 10%;
+    background: var(--svetloPlava);
+    margin: 20px 0;
+}
+h2 {
+    font-size: 2.3rem;
+}
+/* header */
+header div{
+    border: 1px solid red; 
+    background-image: linear-gradient(to right,rgba(253, 127, 69, 1), rgba(29, 82, 124, .5));
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    border: none;
+      
+}
+header div nav {
+    display: flex;  
+    justify-content: space-between; 
+    width: 55%;
+    padding: 0 10px 0 0;
+}
+header .logo {
+    text-transform: uppercase;
+    color: var(--bela);
+    font-size: 1.5rem;  
+    font-weight: 700; 
+    align-items: center; 
+}
+header div nav ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a {
+    text-transform: uppercase;
+    color: var(--svetloSiva);
+    margin-left: 40px;
+    font-size: .9rem;
+    font-weight: 700;
+    display: block;
+    transition: var(--transition);   
+}
+header nav ul li a:hover {
+    color: var(--bela);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+header section {
+    background-image: linear-gradient(rgba(29, 82, 124, .5),rgba(253, 127, 69, .8)), url(img/baloon.jpg); 
+    background-position: top center;
+    background-size: cover; 
+    height: 90vh;
+    position: relative;
+}
+header section article {
+   text-align: center;
+   position: absolute;
+   top: 30%;
+   left: 22%;    
+}
+header h1 {
+    color: var(--svetloSiva);
+    font-size: 2rem;
+    font-weight: 400;
+}
+header h1 span a {
+    color: var(--bela);
+    font-style: italic;
+}
+header p {
+    color: var(--svetloSiva);
+    font-weight: 400;
+    margin: 50px 0;
+}
+button {
+    text-transform: uppercase;
+    background: transparent;
+    font-weight: 700;
+    color: var(--svetloSiva);
+    border: 1px solid var(--svetloSiva);
+    padding: 15px 30px;
+    transition: var(--transition);
+}
+button:hover {
+    cursor: pointer;
+    border: 1px solid var(--tamnoSiva);
+    color: var(--tamnoSiva);
+}
+/* about */
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    text-align: justify;
+}
+.about article {
+    flex: 0 0 48%;
+}
+.about article:first-child {
+    padding: var(--padding);
+}
+.about article h2 {
+    color: var(--tamnoPlava);
+}
+
+.about p {
+    color: var(--tamnoPlava);
+}
+.about article:last-child {
+    background: var(--tamnoPlava);
+    position: relative;
+}
+.about img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 1.2%;
+    right: 1.2%;    
+}
+/* services */ 
+.services {
+    background-image: linear-gradient(rgba(29, 82, 124, .8), rgb(29, 82, 124, .8)), url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    padding: var(--padding);
+    display: flex;
+}
+.services .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.services .container .icons {
+    flex: 0 0 47%;
+    text-align: center;
+}
+.icons ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.icons ul li {
+    flex: 50%;
+    list-style: none;
+    align-items: center;
+    padding: 40px 0;   
+}
+.icons ul li i {
+    color: var(--orange);
+    font-size: 4rem;   
+}
+.more h2 {
+    color: var(--bela);
+}
+.more .underline {
+    background: var(--svetloSiva);
+    opacity: .4;
+}
+.more p {
+    padding: 20px 0;
+    color: var(--svetloSiva);
+    font-weight: 700;
+}
+/* blog */
+.blog {
+    padding: var(--padding);
+    text-align: center;
+}
+.blog article:first-child h2 {
+    color: var(--tamnoPlava);  
+}
+.blog article:first-child .underline {
+    margin: 30px auto 50px; 
+    width: 5%;
+    background: violet;     
+}
+.blog .container {
+    display: flex;
+    justify-content: space-between;
+}
+.blog .container div {
+    flex: 0 0 30%;    
+}
+.blog article img {
+    width: 100%;
+}
+.container h3 {
+    font-size: 1.6rem;
+    padding: 20px 0;
+    color: var(--tamnoPlava);
+}
+.blog .container p {
+    padding: 20px 0;
+    text-align: justify;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--tamnoSiva);
+    opacity: .8;
+    letter-spacing: 1px;    
+}
+.blog button {
+    background: var(--tamnoPlava);
+    color: var(--svetloSiva);
+    font-size: 1rem;
+    border: none;
+    margin-top: 20px;
+    transition: var(--transition);
+}
+.blog button:hover {
+    background: var(--bela);
+    color: var(--tamnoPlava);
+    border: 1px solid var(--tamnoPlava);
+    cursor: pointer;
+}
+/* footer */
+footer {
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(253, 127, 69, .8), rgba(29, 82, 124, .8)), url(img/baloon.jpg);
+    background-position: top;
+    background-size: cover;
+    height: 30vh;  
+    padding: var(--padding)
+}
+footer .social i {
+    font-size: 1.8rem;
+    color: var(--tamnoPlava);
+    margin: 0 10px;   
+}
+footer p {
+    color: var(--svetloSiva);
+    margin: 30px 0;
+    font-weight: 700;
+}
+footer p a {
+    color: var(--svetloSiva);
+    transition: var(--transition);
+}
+footer p a:hover {
+    color: var(--tamnoPlava);
+}
+
