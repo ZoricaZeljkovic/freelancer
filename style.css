@@ -11,10 +11,63 @@ body {
   font-size: 16px;
   color: #303633;
   line-height: 1.6;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Source Sans Pro", sans-serif;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* aside */
+aside {
+  flex: 1;
+  background-image: url(img/bg.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: right;
+  padding-right: 60px;
+}
+aside img {
+  width: 40%;
+  border-radius: 50%;
+  border: 5px solid #9c7a97;
+}
+aside h1 {
+  font-weight: 300;
+  color: #fff;
+  padding: 30px 0;
+}
+aside h1 span {
+  color: #8bebcd;
+  font-weight: 700;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+aside a {
+  color: #8bebcd;
+  margin-left: 20px;
+  font-size: 2rem;
+}
+aside a:hover {
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+/* main */
+.main {
+  flex: 2;
 }
 
 /*# sourceMappingURL=style.css.map */
