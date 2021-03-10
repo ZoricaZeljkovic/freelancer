@@ -39,6 +39,10 @@ h2::after {
   margin: 20px 0;
 }
 
+ul {
+  list-style: none;
+}
+
 /* aside */
 aside {
   flex: 1;
@@ -156,6 +160,65 @@ aside a:hover {
   width: 100%;
   background: #f2f2f2;
   margin: 35px 0;
+}
+.main footer {
+  padding-bottom: 50px;
+}
+.main footer .row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.main footer .row form {
+  flex: 0 0 68%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.main footer .row form input {
+  flex: 0 0 48%;
+  padding: 10px;
+  background: #f2f2f2;
+  border: none;
+  margin-bottom: 30px;
+}
+.main footer .row form textarea {
+  width: 100%;
+  padding: 10px;
+  background: #f2f2f2;
+  border: none;
+}
+.main footer .row form button {
+  border: 2px solid #8bebcd;
+  padding: 10px 40px;
+  font-size: 1rem;
+  border-radius: 8px;
+  background: transparent;
+  color: #8bebcd;
+  cursor: pointer;
+  margin-top: 30px;
+  background: #9c7a97;
+  border: 2px solid #9c7a97;
+  color: #fff;
+}
+.main footer .row form button:hover {
+  border: 2px solid #9c7a97;
+  color: #9c7a97;
+  transition: 0.3s ease;
+}
+.main footer .row form button:hover {
+  background: #8bebcd;
+  border: 2px solid #8bebcd;
+}
+.main footer .row .contact {
+  flex: 0 0 28%;
+}
+.main footer .row .contact li {
+  line-height: 2.5;
+  font-size: 1.2rem;
+}
+.main footer .row .contact li i {
+  color: #9c7a97;
 }
 
 /*# sourceMappingURL=style.css.map */
